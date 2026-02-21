@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>ChatGPT 4.1-mini</title>
+    <link rel="stylesheet" href="panel.css" />
+  </head>
+  <body>
+    <header>
+      <div class="title">ChatGPT 4.1-mini</div>
+      <div class="subtitle">Local proxy: http://localhost:8787</div>
+    </header>
+
+    <main id="thread" aria-live="polite"></main>
+
+    <footer>
+      <textarea
+        id="input"
+        placeholder="Type a question… (Shift+Enter for newline, Enter to send)"
+        rows="3"
+      ></textarea>
+
+      <div class="row">
+        <button id="clearBtn" class="secondary" title="Clear entire chat">
+          Clear chat
+        </button>
+
+        <label class="toggle">
+          <input id="includeSelection" type="checkbox" />
+          <span>Include last selection</span>
+        </label>
+
+        <button id="sendBtn">Send</button>
+      </div>
+
+      <div id="status" class="status"></div>
+    </footer>
+
+    <script src="panel.js"></script>
+  </body>
+</html>
